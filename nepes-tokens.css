@@ -1,0 +1,98 @@
+/* Nepes Design Tokens — generated, do not edit */
+
+:root {
+  /* Brand */
+  --nepes-blue: #23438E;
+  --nepes-orange: #FEA413;
+  --nepes-red: #D4252C;
+  --nepes-green: #43AD49;
+  --nepes-gray: #A5A8AF;
+  --nepes-light-gray: #E7E6E6;
+  --nepes-dark: #1E1C1A;
+  --nepes-dark-gray: #44546A;
+
+  /* Theme (dark default) */
+  --bg-primary: #1E1C1A;
+  --bg-secondary: #262422;
+  --bg-card: #2E2C2A;
+  --bg-deep: #161412;
+  --bg-highlight: #3E3A38;
+  --bg-overlay: #504848;
+  --text-primary: #DCD8D4;
+  --text-secondary: #B6B0AC;
+  --text-muted: #787068;
+  --border-color: #3E3A38;
+  --border-subtle: rgba(62, 58, 56, 0.5);
+  --bg-glass: rgba(30, 28, 26, 0.85);
+  --selection-bg: #2D4A6A;
+  --comment: #8D847B;
+  --cursor: #DCD8D4;
+  --success: #43AD49;
+  --error: #E1575C;
+  --warning: #FEA413;
+  --info: #6A84CA;
+
+  /* Accent */
+  --accent: var(--nepes-orange);
+  --link-color: var(--accent);
+
+  /* Chart */
+  --chart-1: #6A84CA;
+  --chart-2: #FEA413;
+  --chart-3: #43AD49;
+  --chart-4: #A274C3;
+  --chart-5: #3A9BA5;
+  --chart-6: #E1575C;
+  --chart-7: #A2B3DE;
+  --chart-8: #FEC15F;
+  --chart-9: #74C978;
+  --chart-10: #C6A9DA;
+  --chart-11: #63BFC8;
+  --chart-12: #ED989B;
+  --chart-step-0: rgba(106, 132, 202, 0.12);
+  --chart-step-1: rgba(254, 164, 19, 0.1);
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-theme: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] {
+  --bg-primary: #F8F8F8;
+  --bg-secondary: #F0F0F0;
+  --bg-card: #E7E6E6;
+  --bg-deep: #FFFFFF;
+  --bg-highlight: #D8D7D7;
+  --bg-overlay: #C9C8C8;
+  --text-primary: #1C1C1E;
+  --text-secondary: #3A3A3E;
+  --text-muted: #7A7A84;
+  --border-color: #D8D7D7;
+  --border-subtle: rgba(216, 215, 215, 0.5);
+  --bg-glass: rgba(248, 248, 248, 0.85);
+  --selection-bg: #B8D0F0;
+  --comment: #707079;
+  --cursor: #1C1C1E;
+  --success: #2A8030;
+  --error: #C4181F;
+  --warning: #D08A10;
+  --info: #23438E;
+
+  --accent: var(--nepes-blue);
+
+  --chart-1: #23438E;
+  --chart-2: #D08A10;
+  --chart-3: #2A8030;
+  --chart-4: #7A4FA0;
+  --chart-5: #2D7A82;
+  --chart-6: #C4181F;
+  --chart-7: #3260CB;
+  --chart-8: #F0AF3C;
+  --chart-9: #3DBA46;
+  --chart-10: #A07DBF;
+  --chart-11: #41AFBB;
+  --chart-12: #E84148;
+  --chart-step-0: rgba(35, 67, 142, 0.08);
+  --chart-step-1: rgba(208, 138, 16, 0.07);
+}

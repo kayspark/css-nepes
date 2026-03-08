@@ -1,0 +1,117 @@
+/*
+ * Nepes Light — Safari User Stylesheet
+ *
+ * Install:
+ *   1. Save this file as ~/Library/Safari/nepes-light.css
+ *   2. Open Safari → Settings → Advanced
+ *   3. Under "Style sheet", select this file
+ *
+ * Note: Only one user stylesheet can be active at a time.
+ */
+
+/* ── Color Scheme ──────────────────────────────────────────── */
+
+:root {
+  color-scheme: light;
+}
+
+/* ── Body ──────────────────────────────────────────────────── */
+
+body {
+  background-color: #F8F8F8 !important;
+  color: #1C1C1E !important;
+}
+
+/* ── Links ─────────────────────────────────────────────────── */
+
+a:link {
+  color: #23438E;
+}
+
+a:visited {
+  color: #7A4FA0;
+}
+
+a:hover {
+  color: #2D7A82;
+}
+
+/* ── Selection ─────────────────────────────────────────────── */
+
+::selection {
+  background-color: #B8D0F0;
+  color: #1C1C1E;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D8D7D7;
+  border-radius: 6px;
+  border: 2px solid #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #C9C8C8;
+}
+
+/* ── Form Controls ─────────────────────────────────────────── */
+
+input,
+textarea,
+select {
+  background-color: #F0F0F0 !important;
+  color: #1C1C1E !important;
+  border: 1px solid #D8D7D7 !important;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #23438E !important;
+  outline: none;
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #E7E6E6 !important;
+  color: #1C1C1E !important;
+  border: 1px solid #D8D7D7 !important;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #D8D7D7 !important;
+}
+
+/* ── Code Blocks ───────────────────────────────────────────── */
+
+pre,
+code {
+  background-color: #F0F0F0 !important;
+  color: #1C1C1E !important;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2em 0.4em;
+}
