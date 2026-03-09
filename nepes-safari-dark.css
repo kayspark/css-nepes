@@ -2,11 +2,17 @@
  * Nepes Dark — Safari User Stylesheet
  *
  * Install:
- *   1. Save this file as ~/Library/Safari/nepes-dark.css
+ *   1. Save this file to ~/.config/safari/nepes-safari-dark.css
  *   2. Open Safari → Settings → Advanced
  *   3. Under "Style sheet", select this file
  *
  * Note: Only one user stylesheet can be active at a time.
+ *
+ * Design: Without !important, these styles only apply when a page
+ * does NOT set its own styles. This avoids breaking web apps
+ * (Google, Gmail, Gemini) while theming unstyled/plain content.
+ * Only ::selection and ::-webkit-scrollbar use !important since
+ * they are cosmetic and rarely conflict.
  */
 
 /* ── Color Scheme ──────────────────────────────────────────── */
@@ -18,8 +24,8 @@
 /* ── Body ──────────────────────────────────────────────────── */
 
 body {
-  background-color: #1E1C1A !important;
-  color: #DCD8D4 !important;
+  background-color: #1E1C1A;
+  color: #DCD8D4;
 }
 
 /* ── Links ─────────────────────────────────────────────────── */
@@ -39,25 +45,25 @@ a:hover {
 /* ── Selection ─────────────────────────────────────────────── */
 
 ::selection {
-  background-color: #2D4A6A;
-  color: #DCD8D4;
+  background-color: #2D4A6A !important;
+  color: #DCD8D4 !important;
 }
 
 /* ── Scrollbar ─────────────────────────────────────────────── */
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #161412;
+  background-color: #161412 !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3E3A38;
+  background-color: #3E3A38 !important;
   border-radius: 6px;
   border: 2px solid #161412;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #504848;
+  background-color: #504848 !important;
 }
 
 /* ── Form Controls ─────────────────────────────────────────── */
@@ -65,16 +71,16 @@ a:hover {
 input,
 textarea,
 select {
-  background-color: #262422 !important;
-  color: #DCD8D4 !important;
-  border: 1px solid #3E3A38 !important;
+  background-color: #262422;
+  color: #DCD8D4;
+  border: 1px solid #3E3A38;
   border-radius: 4px;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #6A84CA !important;
+  border-color: #6A84CA;
   outline: none;
 }
 
@@ -84,9 +90,9 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #2E2C2A !important;
-  color: #DCD8D4 !important;
-  border: 1px solid #3E3A38 !important;
+  background-color: #2E2C2A;
+  color: #DCD8D4;
+  border: 1px solid #3E3A38;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -95,15 +101,15 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: #3E3A38 !important;
+  background-color: #3E3A38;
 }
 
 /* ── Code Blocks ───────────────────────────────────────────── */
 
 pre,
 code {
-  background-color: #262422 !important;
-  color: #DCD8D4 !important;
+  background-color: #262422;
+  color: #DCD8D4;
   border-radius: 4px;
 }
 
