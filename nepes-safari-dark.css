@@ -31,7 +31,7 @@ body {
 /* ── Links ─────────────────────────────────────────────────── */
 
 a:link {
-  color: #6A84CA;
+  color: #5C8CFF;
 }
 
 a:visited {
@@ -45,7 +45,7 @@ a:hover {
 /* ── Selection ─────────────────────────────────────────────── */
 
 ::selection {
-  background-color: #2D4A6A !important;
+  background-color: #2E4C7A !important;
   color: #DCD8D4 !important;
 }
 
@@ -80,7 +80,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #6A84CA;
+  border-color: #5C8CFF;
   outline: none;
 }
 
